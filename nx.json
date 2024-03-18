@@ -12,23 +12,17 @@
         "vite": ["{projectRoot}/src/**/*", "sharedGlobals", "{projectRoot}/index.html"],
         "sharedGlobals": []
     },
-    "tasksRunnerOptions": {
-        "default": {
-            "runner": "nx/tasks-runners/default",
-            "options": {
-                "cacheableOperations": ["build", "test", "lint"]
-            }
-        }
-    },
     "targetDefaults": {
         "build": {
             "dependsOn": ["^test", "test"],
             "inputs": ["vite"],
-            "outputs": ["{projectRoot}/dist"]
+            "outputs": ["{projectRoot}/dist"],
+            "cache": true
         },
         "test": {
             "inputs": ["default", "production"],
-            "dependsOn": ["^test"]
+            "dependsOn": ["^test"],
+            "cache": true
         }
     }
 }
