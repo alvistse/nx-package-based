@@ -1,2 +1,5 @@
 .nx/cache
 **/node_modules/
+
+
+storybook-static
