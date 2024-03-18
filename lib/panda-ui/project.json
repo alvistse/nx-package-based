@@ -1,0 +1,12 @@
+{
+    "name": "panda-ui",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "targets": {
+        "test": {
+            "executor": "nx:run-commands",
+            "options": {
+                "commands": ["echo 'ui-test'"]
+            }
+        }
+    }
+}

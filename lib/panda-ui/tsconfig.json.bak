@@ -1,0 +1,12 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "module": "ESNext",
+        "target": "ES5",
+        "lib": ["DOM", "ESNext"],
+        "moduleResolution": "Bundler",
+        "rootDir": "./",
+        "jsx": "react-jsx",
+        "types": []
+    }
+}
