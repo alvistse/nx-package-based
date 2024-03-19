@@ -37,9 +37,9 @@ importers:
         specifier: ^5.4.2
         version: 5.4.2
 
-  app/docs: {}
+  apps/docs: {}
 
-  app/web:
+  apps/web:
     dependencies:
       react:
         specifier: ^18.2.0
@@ -49,17 +49,17 @@ importers:
         version: 18.2.0(react@18.2.0)
       ui:
         specifier: workspace:*
-        version: link:../../lib/ui
+        version: link:../../libs/ui
       vanilla-extract-ui:
         specifier: workspace:*
-        version: link:../../lib/vanilla-extract-ui
+        version: link:../../libs/vanilla-extract-ui
     devDependencies:
       '@t3-oss/env-core':
         specifier: ^0.9.2
         version: 0.9.2(typescript@5.4.2)(zod@3.22.4)
       '@types/react':
         specifier: ^18.2.64
-        version: 18.2.66
+        version: 18.2.67
       '@types/react-dom':
         specifier: ^18.2.21
         version: 18.2.22
@@ -85,7 +85,7 @@ importers:
         specifier: ^3.22.4
         version: 3.22.4
 
-  lib/panda-ui:
+  libs/panda-ui:
     dependencies:
       react:
         specifier: ^18.2.0
@@ -96,12 +96,12 @@ importers:
     devDependencies:
       '@types/react':
         specifier: ^18.2.66
-        version: 18.2.66
+        version: 18.2.67
       '@types/react-dom':
         specifier: ^18.2.22
         version: 18.2.22
 
-  lib/ui:
+  libs/ui:
     dependencies:
       react:
         specifier: ^18.2.0
@@ -115,12 +115,12 @@ importers:
         version: 20.11.28
       '@types/react':
         specifier: ^18.2.66
-        version: 18.2.66
+        version: 18.2.67
       '@types/react-dom':
         specifier: ^18.2.22
         version: 18.2.22
 
-  lib/vanilla-extract-ui:
+  libs/vanilla-extract-ui:
     dependencies:
       '@types/react':
         specifier: ^18.2.67
@@ -3405,14 +3405,7 @@ packages:
   /@types/react-dom@18.2.22:
     resolution: {integrity: sha512-fHkBXPeNtfvri6gdsMYyW+dW7RXFo6Ad09nLFK0VQWR7yGLai/Cyvyj696gbwYvBnhGtevUG9cET0pmUbMtoPQ==}
     dependencies:
-      '@types/react': 18.2.66
-
-  /@types/react@18.2.66:
-    resolution: {integrity: sha512-OYTmMI4UigXeFMF/j4uv0lBBEbongSgptPrHBxqME44h9+yNov+oL6Z3ocJKo0WyXR84sQUNeyIp9MRfckvZpg==}
-    dependencies:
-      '@types/prop-types': 15.7.11
-      '@types/scheduler': 0.16.8
-      csstype: 3.1.3
+      '@types/react': 18.2.67
 
   /@types/react@18.2.67:
     resolution: {integrity: sha512-vkIE2vTIMHQ/xL0rgmuoECBCkZFZeHr49HeWSc24AptMbNRo7pwSBvj73rlJJs9fGKj0koS+V7kQB1jHS0uCgw==}
@@ -3420,7 +3413,6 @@ packages:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
       csstype: 3.1.3
-    dev: false
 
   /@types/scheduler@0.16.8:
     resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==}
