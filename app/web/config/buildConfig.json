@@ -1,0 +1,24 @@
+{
+    "appName": "Gotham",
+    "RSNid": "f403f16d",
+    "version": 1.0,
+    "colors": {
+        "primary": {
+            "rgba": [255, 189, 21, 1],
+            "hex": "#ffca44"
+        },
+        "primary700": {
+            "rgba": [181, 134, 15, 1],
+            "hex": "#b5860f"
+        },
+        "primary900": {
+            "rgba": [107, 79, 9, 1],
+            "hex": "#6b4f09"
+        },
+        "secondary": {
+            "rgba": [37, 37, 37, 1],
+            "hex": "252525"
+        }
+    },
+    "adobeRequestorID": "something TBD"
+}
