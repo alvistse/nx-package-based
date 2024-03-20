@@ -1,5 +1,6 @@
 import { Counter as TailwindCounter } from "ui/Counter"
 import { Counter as VanillaCounter } from "vanilla-extract-ui/Counter"
+import { Input as VanillaInput } from "vanilla-extract-ui/Input"
 import { env } from "./env"
 
 console.log(env)
@@ -14,11 +15,10 @@ function App() {
                 </div>
                 <div className="mb-8">
                     <h1 className="text-xl mb-2 font-semibold">Vanilla Extract: </h1>
-                    <VanillaCounter />
-                </div>
-                <div className="mb-8">
-                    <h1 className="text-xl mb-2 font-semibold">Panda CSS: </h1>
-                    <VanillaCounter />
+                    <div className="flex gap-2">
+                        <VanillaInput />
+                        <VanillaCounter />
+                    </div>
                 </div>
             </div>
         </main>
