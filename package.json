@@ -3,12 +3,9 @@
     "type": "module",
     "private": true,
     "devDependencies": {
-        "@nx/react": "18.1.1",
-        "@nx/storybook": "18.1.1",
-        "@nx/web": "18.1.1",
+        "@types/node": "^20.11.28",
         "nx": "18.1.1",
         "prettier": "^3.2.5",
-        "storybook": "^7.5.3",
         "typescript": "^5.4.2"
     },
     "dependencies": {

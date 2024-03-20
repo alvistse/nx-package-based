@@ -14,7 +14,7 @@ function App() {
                     <TailwindCounter />
                 </div>
                 <div className="mb-8">
-                    <h1 className="text-xl mb-2 font-semibold">Vanilla Extract: </h1>
+                    <h1 className="text-xl mb-2 font-semibold">Vanilla Extract 123: </h1>
                     <div className="flex gap-2">
                         <VanillaInput />
                         <VanillaCounter />

@@ -16,4 +16,8 @@ const configSchema = z.object({
     })
 })
 
+if (import.meta.env.MODE === "development") {
+    console.log("hi")
+}
+
 export const env = configSchema.parse(buildConfig)

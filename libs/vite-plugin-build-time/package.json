@@ -1,0 +1,22 @@
+{
+    "name": "vite-plugin-build-time",
+    "private": true,
+    "type": "module",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "scripts": {
+        "build": "tsup"
+    },
+    "devDependencies": {
+        "tsup": "^8.0.2",
+        "vite": "^5.1.6"
+    },
+    "peerDependencies": {
+        "vite": ">=5.0.0"
+    }
+}

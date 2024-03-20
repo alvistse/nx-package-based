@@ -9,14 +9,16 @@
             "!{projectRoot}/.eslintrc.json",
             "!{projectRoot}/eslint.config.js"
         ],
-        "vite": ["{projectRoot}/src/**/*", "sharedGlobals", "{projectRoot}/index.html"],
         "sharedGlobals": []
     },
     "targetDefaults": {
+        "dev": {
+            "dependsOn": ["^build"],
+            "cache": false
+        },
         "build": {
-            "dependsOn": ["^test", "test"],
-            "inputs": ["vite"],
-            "outputs": ["{projectRoot}/dist"],
+            "dependsOn": ["^test", "test", "^build"],
+            "inputs": ["production", "^production", "!{projectRoot}/dist/**/*"],
             "cache": true
         },
         "test": {
@@ -24,16 +26,5 @@
             "dependsOn": ["^test"],
             "cache": true
         }
-    },
-    "plugins": [
-        {
-            "plugin": "@nx/storybook/plugin",
-            "options": {
-                "buildStorybookTargetName": "build-storybook",
-                "serveStorybookTargetName": "storybook",
-                "testStorybookTargetName": "test-storybook",
-                "staticStorybookTargetName": "static-storybook"
-            }
-        }
-    ]
+    }
 }
